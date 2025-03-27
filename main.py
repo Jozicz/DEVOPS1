@@ -1,0 +1,1 @@
+print("pierwsza linia kodu")
