@@ -25,13 +25,13 @@ pipeline {
                 echo 'docker build -t moja-apka . && docker push moja-apka'
             }
         }
-        post {
-            failure {
-                echo 'Testy nieudane'
-            }
-            success {
-                echo 'Aplikacja zdeployowana'
-            }
+    }
+    post {
+        failure {
+            echo 'Testy nieudane'
+        }
+        success {
+            echo 'Aplikacja zdeployowana'
         }
     }
 }
